@@ -5,11 +5,11 @@ import os
 app = Flask(__name__)
 
 @app.route('/')
-def hello():
-    return render_template('index.html')
+def home():
+    return render_template('index2.html')
 
-@app.route('/home',methods=['POST'])
-def hello_world():
+@app.route('/fileupload',methods=['POST'])
+def fileupload():
     f=request.files['file']
     f.save(os.path.join('C:/Users/Ganith/Desktop/Ganith/Flask/data','input.txt'))
     data=request.form

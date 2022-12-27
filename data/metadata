@@ -1,5 +1,5 @@
 {
-    "Encryption1": "DES",
-    "Encryption2": "None",
-    "Hashing": "SHA-256"
+    "E0": "DES",
+    "E1": "ElGamal",
+    "H0": "MD5"
 }
